@@ -1,18 +1,223 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progetto Team</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
 
-  <!-- SERVIZI -->
 
-  <!-- CONTATTI E FOOTER -->
 
+
+  <style>
+    /* Griglia delle card */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      position: relative;
+      background-color: rgba(20, 20, 20, 0.92);
+      border: 1px solid rgba(57, 255, 20, 0.35);
+      border-radius: 12px;
+      padding: 34px 24px 24px;
+      text-align: left;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #39ff14;
+      box-shadow: 0 0 25px rgba(57, 255, 20, 0.45);
+    }
+
+    .card-evidenza {
+      border-color: #ff00c8;
+      box-shadow: 0 0 18px rgba(255, 0, 200, 0.3);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: -12px;
+      right: 18px;
+      background-color: #39ff14;
+      color: #050805;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+    }
+
+    .badge-hot {
+      background-color: #ff00c8;
+      color: #ffffff;
+    }
+
+    .badge-vip {
+      background-color: #ffd700;
+      color: #1a1a1a;
+    }
+
+    .card-icona {
+      font-size: 3rem;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      margin: 6px 0 10px;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: #bdbdbd;
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .card-dettagli {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+      font-size: 0.85rem;
+      color: #39ff14;
+    }
+
+    .card-dettagli li {
+      padding: 4px 0;
+      border-bottom: 1px dashed rgba(57, 255, 20, 0.2);
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .card-prezzo {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .card-voto {
+      color: #ffd700;
+      letter-spacing: 2px;
+    }
+
+    .card-btn {
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      border: 1px solid #39ff14;
+      border-radius: 6px;
+      color: #39ff14;
+      font-family: inherit;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .card-btn:hover {
+      background-color: #39ff14;
+      color: #050805;
+    }
+  </style>
+
+  <section id="servizi" class="servizi">
+
+
+    <div class="card-container">
+      <article class="card">
+        <span class="card-badge">BEST SELLER</span>
+        <div class="card-icona">🍫</div>
+        <h3>Consegna Sottobanco</h3>
+        <p>Snack al cioccolato recapitati sotto il banco in meno di 30 secondi. Il prof non si accorgerà di nulla.</p>
+        <ul class="card-dettagli">
+          <li>⏱️ Tempo medio: 28 sec</li>
+          <li>🕵️ Tasso di successo: 99%</li>
+        </ul>
+        <div class="card-footer">
+          <span class="card-prezzo">2 figurine</span>
+          <span class="card-voto">★★★★★</span>
+        </div>
+        <button class="card-btn">&gt; ORDINA_</button>
+      </article>
+
+      <article class="card card-evidenza">
+        <span class="card-badge badge-hot">🔥 HOT</span>
+        <div class="card-icona">🥐</div>
+        <h3>Cornetti di Contrabbando</h3>
+        <p>Prelevati dal bar prima che finiscano. Rotta segreta attraverso la palestra, zero testimoni.</p>
+        <ul class="card-dettagli">
+          <li>🗺️ Percorso: via spogliatoi</li>
+          <li>🥐 Gusti: crema, cioccolato, vuoto</li>
+        </ul>
+        <div class="card-footer">
+          <span class="card-prezzo">1 compito di mate</span>
+          <span class="card-voto">★★★★☆</span>
+        </div>
+        <button class="card-btn">&gt; ORDINA_</button>
+      </article>
+
+      <article class="card">
+        <span class="card-badge badge-vip">VIP</span>
+        <div class="card-icona">🍕</div>
+        <h3>Pizzetta Priority Pass</h3>
+        <p>Salta la fila della ricreazione. Accesso riservato ai clienti di fiducia con parola d'ordine.</p>
+        <ul class="card-dettagli">
+          <li>🔑 Parola d'ordine: richiesta</li>
+          <li>👑 Posti disponibili: 3</li>
+        </ul>
+        <div class="card-footer">
+          <span class="card-prezzo">Su invito</span>
+          <span class="card-voto">★★★★★</span>
+        </div>
+        <button class="card-btn">&gt; ORDINA_</button>
+      </article>
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
