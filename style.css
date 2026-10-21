@@ -1,66 +1,77 @@
-/* ===== HEADER & NAVBAR ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* --- style.css (regole da aggiungere, branch feature-contatti) --- */
+
+/* SEZIONE CONTATTI */
+#contatti {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #120d08;
-  color: #f5e6d3;
-}
-
-.promo-bar {
-  background: linear-gradient(90deg, #ff9f1c, #e63946);
-  color: #120d08;
-  text-align: center;
-  padding: 8px;
-  font-size: 13px;
-  font-weight: bold;
+#contatti h2 {
+  font-size: 1.8rem;
+  color: #f5a623;
+  margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1e1610;
-  padding: 15px 30px;
-  border-bottom: 3px solid #ff9f1c;
+#contatti p {
+  font-size: 0.95rem;
+  color: #aaaaaa;
+  margin-bottom: 20px;
 }
 
-.logo {
-  color: #f5e6d3;
-  font-size: 24px;
+#contatti form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#contatti label {
+  font-size: 0.9rem;
+  color: #cccccc;
   font-weight: bold;
 }
 
-.logo span {
-  color: #ff9f1c;
+#contatti input,
+#contatti textarea {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 0.95rem;
+  resize: vertical;
 }
 
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  align-items: center;
+#contatti input:focus,
+#contatti textarea:focus {
+  outline: none;
+  border-color: #f5a623;
 }
 
-.navbar a {
-  color: #f5e6d3;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.navbar a:hover {
-  color: #ff9f1c;
-}
-
-.cart {
-  background-color: #e63946;
-  padding: 8px 14px;
-  border-radius: 20px;
+#contatti button {
+  background-color: #f5a623;
+  color: #1a1a1a;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
   font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s ease;
+}
+
+#contatti button:hover {
+  background-color: #d4891a;
+}
+
+/* FOOTER — questo è il blocco che genera il conflitto con Dev 2 */
+.footer {
+  background-color: #D9534F;
+  color: yellow;
+  padding: 40px;
+  text-align: left;
 }

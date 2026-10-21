@@ -9,22 +9,31 @@
 <body>
 
   <!-- HEADER -->
-  <div class="promo-bar">🍫 CONSEGNE SEGRETE NEL CORTILE • SOLO ALL'INTERVALLO • NIENTE DOMANDE 🍫</div>
-  <header class="header">
-    <div class="logo">🕶️ Mercato<span>Nero</span> delle Merendine</div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#servizi">Merce</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-        <li><a href="#carrello" class="cart">🛒 Sacchetto (0)</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <!-- SERVIZI -->
 
   <!-- CONTATTI E FOOTER -->
+  <!-- --- index.html (sezione da aggiungere nel <body>, branch feature-contatti) --- -->
 
+<!-- SEZIONE CONTATTI -->
+<section id="contatti">
+  <h2>Contatta il Fornitore</h2>
+  <p>Tutte le transazioni sono anonime. Nessun nome, nessuna traccia. Solo merendine.</p>
+  <form>
+    <label for="nome-in-codice">Nome in codice:</label>
+    <input type="text" id="nome-in-codice" name="nome-in-codice" placeholder="es. Il Kinder">
+
+    <label for="messaggio">Richiesta:</label>
+    <textarea id="messaggio" name="messaggio" placeholder="Tipo di merce, quantità, punto di scambio..."></textarea>
+
+    <button type="submit">Invia Segnale Criptato</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2025 — Mercato Nero delle Merendine. Operativo dalle 8:15 alle 8:25.</p>
+  <p>Non siamo responsabili di sequestri da parte dei bidelli.</p>
+</footer>
 </body>
 </html>
